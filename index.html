@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Three Js</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .button-collection {
+        position: fixed;
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #ddd;
+      }
+      
+    </style>
+    <script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.131/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.131/examples/jsm/"
+        }
+			}
+		</script>
+  </head>
+  <body>
+
+    <div class="button-collection">
+      <button class="button" onclick="changeCountry('Netherlands')">Netherlands</button>
+      <button class="button" onclick="changeCountry('Belgium')">Belgium</button>
+      <button class="button" onclick="changeCountry('Germany')">Germany</button>
+      <button class="button" onclick="changeCountry('Austria')">Austria</button>
+      <button class="button" onclick="changeCountry('Sweden')">Sweden</button>
+      <button class="button" onclick="changeCountry('Finland')">Finland</button>
+      <button class="button" onclick="changeCountry('Norway')">Norway</button>
+      <button class="button" onclick="changeCountry('Denmark')">Denmark</button>
+      <button class="button" onclick="changeCountry('UK')">UK</button>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
